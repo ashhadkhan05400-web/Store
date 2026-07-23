@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - ShopSphere</title>
+    <link rel="stylesheet" href="api.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo" style="text-decoration: none;">
+                <span>ShopSphere</span>
+            </a>
+
+            <div class="search-bar">
+                <input type="text" id="productSearch" placeholder="Search for products, brands...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="products.html" class="active">Shop All</a>
+            </div>
+
+            <div class="nav-icons">
+                <div class="icon cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <i style="margin-top: 23px;" class="fa-regular fa-user icon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <header class="shop-header">
+        <div class="shop-header-container">
+            <h1>Explore All Products</h1>
+            <p>Browse our complete catalog of premium items with fast delivery.</p>
+        </div>
+    </header>
+
+    <!-- SHOP LAYOUT (SIDEBAR + GRID) -->
+    <main class="shop-page-container">
+        
+        <!-- FILTER SIDEBAR -->
+        <aside class="filter-sidebar">
+            <div class="filter-header">
+                <h3><i class="fa-solid fa-sliders"></i> Filters</h3>
+                <button id="resetFiltersBtn" class="reset-btn">Reset All</button>
+            </div>
+
+            <!-- Categories Filter -->
+            <div class="filter-group">
+                <h4>Categories</h4>
+                <div class="category-list" id="categoryList">
+                    <label class="filter-checkbox">
+                        <input type="radio" name="category" value="all" checked>
+                        <span>All Categories</span>
+                    </label>
+                    <label class="filter-checkbox">
+                        <input type="radio" name="category" value="beauty">
+                        <span>Beauty</span>
+                    </label>
+                    <label class="filter-checkbox">
+                        <input type="radio" name="category" value="fragrances">
+                        <span>Fragrances</span>
+                    </label>
+                    <label class="filter-checkbox">
+                        <input type="radio" name="category" value="furniture">
+                        <span>Furniture</span>
+                    </label>
+                    <label class="filter-checkbox">
+                        <input type="radio" name="category" value="groceries">
+                        <span>Groceries</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Price Range Filter -->
+            <div class="filter-group">
+                <h4>Max Price: <span id="priceValue">$2499.99</span></h4>
+                <!-- <input type="range" id="priceRange" min="10" max="500" value="500" step="10" class="price-slider"> -->
+            </div>
+        </aside>
+
+        <!-- MAIN PRODUCTS AREA -->
+        <section class="shop-main-content">
+
+            
+            <!-- TOOLBAR (Count + Sorting) -->
+            <div class="shop-toolbar">
+                <p class="product-count">Showing <span id="showingCount">0</span> products</p>
+
+                <div class="sort-wrapper">
+                    <label for="sortSelect">Sort By:</label>
+                    <select id="sortSelect" class="sort-select">
+                        <option value="default">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- PRODUCT GRID (Preserves your original #grid) -->
+            <div id="grid" class="product-grid">
+                 <div class="product-card">
+                <img src="https://picsum.photos/id/20/400/400" alt="">
+                <div class="product-info">
+                    <h3>Apple iPhone 15 Pro</h3>   <h4>Category</h4> <br>
+                      <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem explicabo odit sit eveniet quos blanditiis unde</h6>
+                    <br>
+                    <p class="price">$1,299</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            </div>
+             
+            
+
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 ShopSphere. Made for you.</p>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+</body>
+
+</html>
