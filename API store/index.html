@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSphere - Premium Store</title>
+    <link rel="stylesheet" href="api.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <!-- <span class="logo-icon"><i class="fa-solid fa-bolt"></i></span> -->
+                <span>ShopSphere</span>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products, brands...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="nav-menu">
+                <a href="api.html" class="active">Home</a>
+                <a href="view.html">Shop</a>
+            </div>
+
+            <div class="nav-icons">
+                <div class="icon cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <i style="margin-top: 23px;" class="fa-regular fa-user icon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-content">
+            <!-- <span class="hero-tag"><i class="fa-solid fa-fire"></i> Summer Collection</span> -->
+            <h1>Summer Sale <span class="highlight">Up to 50% Off</span></h1>
+            <p>Premium products • Fast delivery • Best prices</p>
+            <a style="text-decoration: none;" href="view.html" class="cta-btn">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </header>
+
+    <!-- FEATURES BAR -->
+    <section class="features">
+        <div class="feature-item">
+            <i class="fa-solid fa-truck-fast"></i>
+            <div>
+                <h4>Fast & Free Shipping</h4>
+                <p>On orders over $99</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div>
+                <h4>Secure Payments</h4>
+                <p>100% protected SSL checkout</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <i class="fa-solid fa-rotate-left"></i>
+            <div>
+                <h4>30-Day Free Returns</h4>
+                <p>Hassle-free return policy</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <i class="fa-solid fa-headset"></i>
+            <div>
+                <h4>24/7 Support</h4>
+                <p>Dedicated customer service</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="categories">
+        <h2>Browse Categories</h2>
+        <a style="text-decoration: none;" href="view.html" class="cat-grid">
+            <div class="cat-card">
+                <div class="cat-icon-wrapper"><i class="fa-solid fa-shirt"></i></div>
+                <span>Fashion</span>
+            </div>
+            <div class="cat-card">
+                <div class="cat-icon-wrapper"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <span>Beauty</span>
+            </div>
+            <div class="cat-card">
+                <div class="cat-icon-wrapper"><i class="fa-solid fa-couch"></i></div>
+                <span>Home</span>
+            </div>
+            <div class="cat-card">
+                <div class="cat-icon-wrapper"><i class="fa-solid fa-basket-shopping"></i></div>
+                <span>Groceries</span>
+            </div>
+        </a>
+    </section>
+
+    <!-- PRODUCTS (EXACT ORIGINAL HTML, IDS, AND CLASSES PRESERVED) -->
+    <section id="shop" class="products">
+        <div class="section-header">
+            <h2>Featured Products</h2>
+            <a href="view.html" class="view-all">View All →</a>
+        </div>
+
+        <div id="grid" class="product-grid">
+            <!-- <div class="product-card">
+                <img src="https://picsum.photos/id/20/400/400" alt="">
+                <div class="product-info">
+                    <h3>Apple iPhone 15 Pro</h3>   <h4>Category</h4> <br>
+                      <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem explicabo odit sit eveniet quos blanditiis unde</h6>
+                    <br>
+                    <p class="price">$1,299</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://picsum.photos/id/201/400/400" alt="">
+                <div class="product-info">
+                    <h3>MacBook Air M3</h3>   <h4>Category</h4> <br>
+                      <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem explicabo odit sit eveniet quos blanditiis unde</h6>
+                    <br>
+                    <p class="price">$1,499</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://picsum.photos/id/106/400/400" alt="">
+                <div class="product-info">
+                    <h3>Dior Sauvage Elixir</h3>    <h4>Category</h4> <br>
+                    <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem explicabo odit sit eveniet quos blanditiis unde</h6>
+                    <br>
+                    <p class="price">$145</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://picsum.photos/id/180/400/400" alt="">
+                <div class="product-info">
+                    <h3>The Ordinary Serum</h3>   <h4>Category</h4> <br>
+                      <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem explicabo odit sit eveniet quos blanditiis unde</h6>
+                    <br>
+                    <p class="price">$18.90</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 ShopSphere. Made for you.</p>
+        </div>
+    </footer>
+
+    <script src="api.js"></script>
+</body>
+
+</html>
